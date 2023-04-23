@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     width: 70%;
     
 
@@ -46,4 +46,12 @@ main {
     background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
+
+}
+
+.hello {
+    text-align: left;
+    padding-left: 40px;
+    display: flex;
+    width: 100%;
 }
