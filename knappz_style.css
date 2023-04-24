@@ -31,8 +31,7 @@ header {
 }
 
 .navi a {
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 
 main {
@@ -43,7 +42,6 @@ main {
     background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
-
 }
 
 .hello {
@@ -55,14 +53,10 @@ main {
 
 .ghost {
     width: 300px;
-    height: 100%;
-    
-    
+    height: 100%; 
 }
 
-.ghost img {
-    
+.ghost img { 
     width: 120%;
-    height: 180%;
-    
+    height: 180%; 
 }
