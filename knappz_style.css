@@ -4,12 +4,8 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     width: 70%;
-    
-
-    
-    
 }
 
 header {
@@ -19,13 +15,14 @@ header {
     background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
+    overflow: hidden;
 }
 
 .navi {
-    padding-right: 40px;
     padding-left: 40px;
     display: flex;
     width: 100%;
+    height: 80px;
     justify-content: space-between;
 }
 
@@ -41,9 +38,31 @@ header {
 main {
     margin-top: 20px;
     width: 100%;
-    height: 40%;
+    height: 900px;
     border-radius: 10px;
     background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
+
+}
+
+.hello {
+    text-align: left;
+    padding-left: 40px;
+    display: flex;
+    width: 100%;
+}
+
+.ghost {
+    width: 300px;
+    height: 100%;
+    
+    
+}
+
+.ghost img {
+    
+    width: 120%;
+    height: 180%;
+    
 }
