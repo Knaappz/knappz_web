@@ -1,18 +1,17 @@
 body {
-    background: rgb(45, 45, 45);
+    background: rgb(255, 158, 22);
     font-family: 'Cabin', sans-serif;
 }
 
 .container {
     margin: 30px auto 0 auto;
-    width: 70%;
+    width: 50%;
 }
 
 header {
     width: 100%;
     display: flex;
     border-radius: 10px;
-    background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
     overflow: hidden;
@@ -20,14 +19,21 @@ header {
 
 .navi {
     padding-left: 40px;
+    padding-right: 50px;
     display: flex;
     width: 100%;
     height: 80px;
+    align-items: center;
     justify-content: space-between;
 }
 
+.logo {
+    width: 15%;
+    height: 70%;
+}
+
 .navi h2 {
-    color: rgb(31, 29, 29);
+    color: rgb(52, 52, 52);
 }
 
 .navi a {
@@ -39,24 +45,23 @@ main {
     width: 100%;
     height: 900px;
     border-radius: 10px;
-    background-color: rgb(255, 193, 101);
     border-bottom: 5px solid rgb(18, 18, 18);
     border-right: 5px solid rgb(18, 18, 18);
+    background: rgb(223,122,139);
+    background: linear-gradient(90deg, rgba(223,122,139,1) 0%,
+     rgba(255,158,22,1) 0%, rgba(215,112,0,1) 22%, rgba(18,18,18,1) 100%);
 }
 
 .hello {
-    text-align: left;
-    padding-left: 40px;
-    display: flex;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(18, 18, 18);
     width: 100%;
+    color: white;
+    letter-spacing: 2px;
 }
 
-.ghost {
-    width: 300px;
-    height: 100%; 
-}
-
-.ghost img { 
-    width: 120%;
-    height: 180%; 
-}
