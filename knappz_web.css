@@ -2,7 +2,7 @@
     margin: 0; padding: 0; 
 }
 body {
-    background: rgb(255, 158, 22);
+    background: #36393e;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -17,8 +17,8 @@ header {
     display: flex;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    border-bottom: 5px solid rgb(18, 18, 18);
-    border-right: 5px solid rgb(18, 18, 18);
+    border-bottom: 3px solid rgb(18, 18, 18);
+    border-right: 3px solid rgb(18, 18, 18);
 }
 
 .navi {
@@ -40,6 +40,9 @@ header {
 }
 
 .blok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 140px;
     height: 50px;
     text-align: center;
@@ -48,16 +51,42 @@ header {
 }
 
 .blok h2 {
+    font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: black;
+    color: rgb(211, 211, 211);
     letter-spacing: 2px;
     transition: 0.5s;
 }
 
 .blok h2:hover {
-    color: rgb(118, 46, 10);
-    letter-spacing: 3px;
+    color: rgb(255, 209, 163);
+    letter-spacing: 4px;
+}
+
+.dc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dc h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(211, 211, 211);
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.dc h2:hover {
+    color: #7289da;
+    letter-spacing: 4px;
 }
 
 .navi a {
@@ -69,11 +98,9 @@ main {
     width: 100%;
     height: 800px;
     border-radius: 10px;
-    border-bottom: 5px solid rgb(18, 18, 18);
-    border-right: 5px solid rgb(18, 18, 18);
-    background: rgb(223,122,139);
-    background: linear-gradient(90deg, rgba(223,122,139,1) 0%,
-     rgba(255,158,22,1) 0%, rgba(215,112,0,1) 22%, rgba(18,18,18,1) 100%);
+    border-bottom: 3px solid rgb(18, 18, 18);
+    border-right: 3px solid rgb(18, 18, 18);
+
 }
 
 .hello {
