@@ -5,40 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>knappz_web</title>
-    <link rel="stylesheet" href="knappz_web.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+
+    <script>
+        // Pobierz linki do sekcji
+        const links = document.querySelectorAll('.blok a');
+
+        // Dodaj nasłuchiwanie zdarzeń dla każdego linku
+        links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Zatrzymaj domyślne zachowanie przeglądarki po kliknięciu na link
+
+            const targetId = this.getAttribute('href'); // Pobierz identyfikator docelowej sekcji
+            const targetElement = document.querySelector(targetId); // Pobierz element docelowy
+
+            if (targetElement) {
+            const offset = targetElement.offsetTop; // Pobierz odległość sekcji od góry strony
+            const headerHeight = document.querySelector('header').offsetHeight; // Pobierz wysokość nagłówka
+
+            // Oblicz pozycję docelową z uwzględnieniem nagłówka
+            const targetPosition = offset - headerHeight;
+
+            // Przewiń do pozycji docelowej z płynnym efektem
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            }
+        });
+        });
+
+    </script>
+
 </head>
 <body>
     <div class="container">
         
+        <div id="logo">
+            <img src="arddead.png">
+        </div>
+
         <header>
             <div class="navi">
                 <div class="blok">
-                    <h2>_knappz</h2>
+                    <a href="#logo"><h2>start</h2></a>
                 </div>
                 
                 <div class="blok">
-                    <a href="project.html"><h2>projects</h2></a>
+                    <a href="#projekty"><h2>projekty</h2></a>
                 </div>
 
-                <div class="dc">
-                    <a href="discord.html"><h2>discord</h2></a>
-                </div>
-             
                 <div class="blok">
-                    <a href="contact.html"><h2>contact</h2></a>
+                    <a href="#kontakt"><h2>kontakt</h2></a>
                 </div>
 
             </div>   
         </header>
 
         <main>
-           <div class="hello">
-                <h3>Welcome!</h3>
-           </div>
+            <div id="about">
+                <div class="ococho">
+                    <h2>O co tu chodzi?</h2>
+                    <p>
+                        Witaj! <br>
+                        Jesteś na stronie, gdzie umieszczam swoje projekty stron internetowych, programy i inne.<br>
+                        Ja jestem Jakub "knappz" Knapik studiuje informatyke na Uniwersystecie Dolnoślaskim DSW we Wrocławiu.
+                    </p>
+                </div>
+
+                <div class="ococho2">
+                    <p></p>
+                </div>
+
+
+            </div>
+            
+            <div id="projekty">
+                <h2>Moje projekty</h2>
+            </div>
+            
+            <div id="kontakt">
+                <h2>Kontakt</h2>
+            </div>
+
         </main>
+
+        <footer>
+            <p>stopka elo</p>
+        </footer>
 
     </div>
 </body>
